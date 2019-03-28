@@ -14,22 +14,12 @@ public class Main {
         String pass = input.nextLine();
         String correctpass = "TGIF";
 
-        int fails = 1;
-        while(fails <= 5){
+       int trys = 0;
+       int lol = 1;
 
-            if(pass==correctpass){
-                System.out.println("welcome. It took you " + fails  + " trys to log in  ");
-
-            }else if(pass != correctpass){
-                System.out.println("try again");
-                input.nextLine();
-
-            }else if(fails == 5){
-                System.out.println("Contact the system admin. It took you " + fails + " tries.");
-                fails++;
-
-            }
-        }
+       /*do{
+           System.out.println("try your password" + "\t" + lol);
+       }*/
 
     }
 

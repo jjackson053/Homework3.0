@@ -35,10 +35,10 @@ public class Main {
         boolean ello = true; // boolean only has 2 values, true and false. ello is also the variable.
         System.out.println(ello);
         //3.4.2 constants
-        final double lol = 7.1;// final makes the variable constants. which means no other variable can be set to double.
-        double nice = 4.5;
-        double bad = 10;
-        System.out.println((nice * lol) + (bad * lol));
+        final double LOL = 7.1;// final makes the variable constants. which means no other variable can be set to double.
+        double NICE = 4.5;
+        double BAD= 10;
+        System.out.println((NICE * LOL) + (BAD * LOL));
 
         // 3.5 Operators
         //these are the math operators +(addition), -( subtraction), *(multiplication), and /(division)
@@ -62,20 +62,23 @@ public class Main {
         System.out.println(Math.pow(g,h));
 
        // 3.6 Strings
+       //you can extract a substring from a larger string with the substring method
         String greeting = "hello";
-        String s = greeting.substring(0, 3);
-        System.out.println(s);
+        String s = greeting.substring(1); // 0,3 = hel , 2,5 = llo , 4,5 = o , 1 = ello
+        // 5,5 prints nothing
+        System.out.println("Another way to greet someone is " + s);
         int o = greeting.length();
-        System.out.println(o);
+        System.out.println(o);// prints 5
         char first = greeting.charAt(0);
         char last = greeting.charAt(4);
-        System.out.println(first);
-        System.out.println(last);
+        System.out.println(first);// prints h
+        System.out.println(last);// prints o
 
         //3.7 Input and Output
         Scanner yeah = new Scanner(System.in);
         System.out.println("What is your name");
         String name = yeah.nextLine();
+
 
         //3.8 control Flow
         int balance = 30;
@@ -98,6 +101,7 @@ public class Main {
             int[] w = new int[100];
             for (int q = 0; q < 100; q++);
             w[i] = i;
+            System.out.println(w[i]);
         }
 
     }
